@@ -21,7 +21,7 @@
   "dependencies": {
     "angular": "^1.4.9",
     "angular-ui-router": "^0.2.15",
-    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
     "browserify": "^13.0.0",
     "express": "^4.13.4",
     "gulp": "^3.9.0",
