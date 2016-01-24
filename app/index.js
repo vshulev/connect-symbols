@@ -4,5 +4,6 @@ module.exports = 'connect-symbols';
 
 angular.module('connect-symbols', [
   require('angular-ui-router'),
-  require('./routes')
+  require('./routes'),
+  require('./home')
 ]);

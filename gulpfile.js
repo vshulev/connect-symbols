@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var del  = require('del');
 
 gulp.task('clean', function() {
   return del(['build/**/*']);
@@ -12,6 +13,9 @@ gulp.task('watch-css', ['build-css'], require('./tasks/css/watch-css'));
 // HTML
 gulp.task('copy-html', require('./tasks/html/copy-html'));
 gulp.task('watch-html', ['copy-html'], require('./tasks/html/watch-html'));
+
+// content
+gulp.task('build-content', ['copy-html'], require('./tasks/build-content'));
 
 // static assets
 gulp.task('copy-images', require('./tasks/static/copy-images'));
