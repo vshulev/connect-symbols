@@ -15,6 +15,7 @@ function PeopleController(people, interviews) {
 
   function getPerson(interview) {
     var person = {};
+    person.id = interview.filename;
     person.name = interview.meta.name;
     person.description = interview.meta.description;
     person.image = {};
