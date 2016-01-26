@@ -8,7 +8,7 @@
       - _prose.yml
       - .gitignore
       - .travis.yml
-      - .gulpfile.js
+      - gulpfile.js
       - index.html
       - package.json
     metadata:
