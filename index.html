@@ -8,6 +8,11 @@
   </head>
 
   <body ng-app="connect-symbols">
-    <div ui-view></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8"><div ui-view></div></div>
+        <div class="col-sm-4"><cs-nav></cs-nav></div>
+      </div>
+    </div>
   </body>
 </html>

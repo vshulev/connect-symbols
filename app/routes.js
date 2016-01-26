@@ -9,11 +9,6 @@ angular.module('connect-symbols.routes', [])
     .state('home', {
       url: '',
       templateUrl: 'home/home.html',
-      controller: 'HomeController',
-      controllerAs: 'vm',
-      resolve: {
-        interviews: interviewsResolveCtrl,
-      },
     })
     .state('interview', {
       url: '/interview/:id',
@@ -24,11 +19,6 @@ angular.module('connect-symbols.routes', [])
         interview: interviewResolveCtrl,
       },
     });
-
-  interviewsResolveCtrl.$inject = ['Interview'];
-  function interviewsResolveCtrl(Interview) {
-    return Interview.query();
-  }
 
   interviewResolveCtrl.$inject = ['Interview', '$stateParams'];
   function interviewResolveCtrl(Interview, $stateParams) {
