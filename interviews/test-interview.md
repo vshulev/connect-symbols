@@ -1,13 +1,11 @@
 ---
-person:
-  name: John Smith
-  photo: crtmn
-  description: he is the coolest dude ever!
-icons:
-  separate:
-    - bow-and-arrow
-    - brain
-  combined: gorkoto-zai4e
+name: John Smith
+photo: crtmn
+description: he is the coolest dude ever!
+separate:
+  - bow-and-arrow
+  - brain
+combined: gorkoto-zai4e
 ---
 
 Wohin entwickelt sich Design? /Bzw. wie verändert der gesellschaftliche Wandel den Designberuf?
