@@ -11,6 +11,6 @@ function csDraggable() {
   };
 
   function csDraggableCtrl(scope, elem, attr) {
-    $(elem).draggable({ revert: true });
+    $(elem).draggable({ revert: true, stack: $('.cs-icon-grid img') });
   }
 }

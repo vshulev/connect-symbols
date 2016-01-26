@@ -1,9 +1,9 @@
 ---
 person: John Smith
-photo: crtmn.png
-icon1: bow-and-arrow.png
-icon2: brain.png
-icon_combo: combo.jpg
+photo: crtmn
+icon1: bow-and-arrow
+icon2: brain
+icon_combo: combo
 ---
 
 Ja, ja, hallo, guten tag. Achso.

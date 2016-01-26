@@ -8,10 +8,20 @@ angular.module('connect-symbols.routes', [])
   $stateProvider
     .state('home', {
       url: '',
-      templateUrl: 'home/home.html'
+      templateUrl: 'home/home.html',
+      controller: 'HomeController',
+      controllerAs: 'vm',
+      resolve: {
+        interviews: interviewsResolveCtrl
+      }
     })
     .state('interview', {
       url: '/interview/:id',
       templateUrl: 'interview/interview.html'
     });
+
+  interviewsResolveCtrl.$inject = ['Interview'];
+  function interviewsResolveCtrl(Interview) {
+    return Interview.query();
+  }
 }]);
