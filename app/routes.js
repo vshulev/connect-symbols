@@ -9,6 +9,10 @@ angular.module('connect-symbols.routes', [])
     templateUrl: 'home/home.html',
   };
 
+  let homeHeaderView = {
+    templateUrl: 'home/header.html',
+  };
+
   let interviewContentView = {
     templateUrl: 'interview/interview.html',
     controller: 'InterviewController',
@@ -41,6 +45,7 @@ angular.module('connect-symbols.routes', [])
     .state('home', {
       url: '',
       views: {
+        header: homeHeaderView,
         content: homeContentView,
       },
     })
