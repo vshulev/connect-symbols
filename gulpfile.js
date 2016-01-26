@@ -15,7 +15,8 @@ gulp.task('copy-html', require('./tasks/html/copy-html'));
 gulp.task('watch-html', ['copy-html'], require('./tasks/html/watch-html'));
 
 // content
-gulp.task('build-content', require('./tasks/build-content'));
+// HACK throws an error if build directory doesn't exist, so need to wait for copy-html
+gulp.task('build-content', ['copy-html'], require('./tasks/build-content'));
 
 // static assets
 gulp.task('copy-images', require('./tasks/static/copy-images'));

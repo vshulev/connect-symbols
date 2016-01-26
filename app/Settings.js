@@ -6,7 +6,7 @@ Settings.$inject = ['$http'];
 function Settings($http) {
   let resource = $http
     .get('/settings.json')
-    .then(settings => interviews.data);
+    .then(settings => settings.data);
 
   return {
     query,
@@ -19,6 +19,6 @@ function Settings($http) {
 
   function get(id) {
     return resource
-      .then(interviews => _.filter(interviews, { filename: id })[0]);
+      .then(settings => _.filter(settings, { filename: id })[0]);
   }
 }

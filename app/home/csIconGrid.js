@@ -2,22 +2,28 @@ var _ = require('lodash');
 
 module.exports = csIconGrid;
 
-function csIconGrid() {
+csIconGrid.$inject = ['Settings'];
+function csIconGrid(Settings) {
   return {
     restrict: 'E',
     scope: {
-      interviews: '='
+      interviews: '=',
     },
-    template: [
-      '<div class="row cs-icon-grid">',
-        '<div class="col-sm-2" ng-repeat="icon in [1, 2, 3, 4]">',
-          '<img cs-draggable class="img-responsive" src="images/icons/brain.png">',
-        '</div>',
-      '</div>'
-    ].join(''),
-    link: csIconGridCtrl
+    link: csIconGridCtrl,
+    template: `
+      <div class="row cs-icon-grid">
+        <div class="col-sm-2" ng-repeat="icon in icons">
+          <img cs-draggable class="img-responsive" src="{{ icon }}">
+        </div>
+      </div>
+    `,
   };
 
   function csIconGridCtrl(scope, elem, attr) {
+    Settings
+      .query()
+      .then(settings => settings.icons.order)
+      .then(icons => icons.map(icon => `images/icons/${icon}.png`))
+      .then(icons => { scope.icons = icons; });
   }
 }
