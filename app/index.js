@@ -12,4 +12,5 @@ angular.module('connect-symbols', [
   require('./people'),
 ])
 
-.factory('Settings', require('./Settings'));
+.factory('Settings', require('./Settings'))
+.directive('csNav', require('./csNav'));
