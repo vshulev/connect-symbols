@@ -4,8 +4,8 @@ person:
   photo: crtmn
 icons:
   separate:
-    - icons/bow-and-arrow
-    - icons/brain
+    - bow-and-arrow
+    - brain
   combined: gorkoto-zai4e
 ---
 
