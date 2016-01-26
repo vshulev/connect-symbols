@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "./node_modules/.bin/gulp",
-    "build": "./node_modules/.bin/gulp build:prod"
+    "build": "./node_modules/.bin/gulp build:prod",
+    "deploy": "./node_modules/.bin/gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "angular-ui-router": "^0.2.15",
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
+    "bitballoon": "^0.2.2",
     "bootstrap-sass": "^3.3.6",
     "bounce.js": "^0.8.2",
     "browserify": "^13.0.0",

@@ -45,5 +45,8 @@ gulp.task('build:prod', [
   'copy-static-assets'
 ]);
 
+// deploy
+gulp.task('deploy', ['build:prod'], require('./tasks/deploy'))
+
 // default task
 gulp.task('default', ['build:dev']);
