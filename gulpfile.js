@@ -15,7 +15,7 @@ gulp.task('copy-html', require('./tasks/html/copy-html'));
 gulp.task('watch-html', ['copy-html'], require('./tasks/html/watch-html'));
 
 // content
-gulp.task('build-content', ['copy-html'], require('./tasks/build-content'));
+gulp.task('build-content', require('./tasks/build-content'));
 
 // static assets
 gulp.task('copy-images', require('./tasks/static/copy-images'));
@@ -31,6 +31,7 @@ gulp.task('build:dev', [
   'watch-css',
   'watch-html',
   'build-js:dev',
+  'build-content',
   'copy-static-assets'
 ], require('./tasks/run-dev-server'));
 
@@ -39,6 +40,7 @@ gulp.task('build:prod', [
   'build-css:prod',
   'copy-html',
   'build-js:prod',
+  'build-content',
   'copy-static-assets'
 ]);
 

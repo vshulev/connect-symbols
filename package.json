@@ -21,6 +21,8 @@
   "dependencies": {
     "angular": "^1.4.9",
     "angular-ui-router": "^0.2.15",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
     "bootstrap-sass": "^3.3.6",
     "bounce.js": "^0.8.2",
     "browserify": "^13.0.0",
@@ -39,6 +41,7 @@
     "marky-mark": "^1.2.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
+    "watchify": "^3.7.0",
+    "yamljs": "^0.2.4"
   }
 }

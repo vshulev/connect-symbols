@@ -1,3 +1,4 @@
+var babelify   = require('babelify');
 var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
 var gulp       = require('gulp');
@@ -16,7 +17,8 @@ function bundle(b) {
 }
 
 module.exports = function() {
-  var b = browserify({ entries: ['app/index.js'], debug: true });
+  var b = browserify({ entries: ['app/index.js'], debug: true })
+    .transform(babelify, { presets: ['es2015'] });
   b.on('update', bundle.bind({ b: b }));
   b.on('log', gutil.log);
   return bundle(b);

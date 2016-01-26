@@ -1,12 +1,12 @@
 const _ = require('lodash');
 
-module.exports = Interview;
+module.exports = Settings;
 
-Interview.$inject = ['$http'];
-function Interview($http) {
+Settings.$inject = ['$http'];
+function Settings($http) {
   let resource = $http
-    .get('/interviews.json')
-    .then(interviews => interviews.data);
+    .get('/settings.json')
+    .then(settings => interviews.data);
 
   return {
     query,

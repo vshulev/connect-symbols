@@ -7,4 +7,6 @@ angular.module('connect-symbols', [
   require('./routes'),
   require('./home'),
   require('./interview')
-]);
+])
+
+.factory('Settings', require('./Settings'));

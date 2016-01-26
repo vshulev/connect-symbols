@@ -1,3 +1,4 @@
+var babelify   = require('babelify');
 var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
 var gulp       = require('gulp');
@@ -6,10 +7,12 @@ var source     = require('vinyl-source-stream');
 var sourcemaps = require('gulp-sourcemaps');
 var watchify   = require('watchify');
 
-var b = watchify(browserify({ entries: ['app/index.js'], debug: true }));
+var b = browserify({ entries: ['app/index.js'], debug: true })
+  .transform(babelify, { presets: ['es2015'] });
+var w = watchify(b);
 
 function bundle() {
-  return b
+  return w
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
@@ -18,8 +21,8 @@ function bundle() {
     .pipe(gulp.dest('build'));
 }
 
-b.on('update', bundle);
-b.on('log', gutil.log);
+w.on('update', bundle);
+w.on('log', gutil.log);
 
 module.exports = function() {
   return bundle();
