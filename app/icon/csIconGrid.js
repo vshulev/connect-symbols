@@ -12,14 +12,7 @@ function csIconGrid(Settings) {
     link: csIconGridCtrl,
     template: `
       <div class="row cs-icon-grid">
-        <div class="col-sm-2" ng-repeat="icon in icons">
-          <img
-            cs-draggable
-            cs-droppable
-            class="img-responsive"
-            id="{{ icon.id }}"
-            src="{{ icon.src }}">
-        </div>
+        <cs-icon ng-repeat="icon in icons"></cs-icon>
       </div>
     `,
   };
