@@ -32,3 +32,9 @@
             element: text
             label: Combined Image
             help: the name of the combined image for this interview (without .png)
+        - name: separate
+          field:
+            element: multiselect
+            label: Icons
+            help: the names of the two icons for this interview (without .png)
+            alterable: true
