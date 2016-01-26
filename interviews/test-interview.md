@@ -2,6 +2,7 @@
 person:
   name: John Smith
   photo: crtmn
+  description: he is the coolest dude ever!
 icons:
   separate:
     - bow-and-arrow

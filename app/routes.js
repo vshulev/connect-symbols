@@ -31,6 +31,10 @@ angular.module('connect-symbols.routes', [])
     templateUrl: 'people/people.html',
     controller: 'PeopleController',
     controllerAs: 'vm',
+    resolve: {
+      people: peopleResolveCtrl,
+      interviews: interviewsResolveCtrl,
+    },
   };
 
   $stateProvider
@@ -62,5 +66,12 @@ angular.module('connect-symbols.routes', [])
   interviewResolveCtrl.$inject = ['Interview', '$stateParams'];
   function interviewResolveCtrl(Interview, $stateParams) {
     return Interview.get($stateParams.id);
+  }
+
+  peopleResolveCtrl.$inject = ['Settings'];
+  function peopleResolveCtrl(Settings) {
+    return Settings
+      .query()
+      .then(settings => settings.interviews.order);
   }
 }]);
