@@ -1,0 +1,34 @@
+---
+  prose:
+    media: /images
+    ignore:
+      - /app
+      - /styles
+      - /tasks
+      - _prose.yml
+      - .gitignore
+      - .travis.yml
+      - .gulpfile.js
+      - index.html
+      - package.json
+    metadata:
+      interviews:
+        - name: name
+          field:
+            element: text
+            label: Person name
+        - name: photo
+          field:
+            element: text
+            label: Photo
+            help: the name of the image for this person (without .png)
+        - name: description
+          field:
+            element: text
+            label: Description
+            help: description for this person
+        - name: combined
+          field:
+            element: text
+            label: Combined Image
+            help: the name of the combined image for this interview (without .png)
