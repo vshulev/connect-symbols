@@ -6,4 +6,5 @@ module.exports = name;
 
 angular.module(name, [])
 
-.directive('home', require('./home'));
+.directive('home', require('./home'))
+.directive('homeText', require('./homeText'));

@@ -9,4 +9,7 @@ angular.module('connect-symbols', [
 ])
 
 .directive('csContainer', require('./csContainer'))
-.directive('csMoveUp', require('./csMoveUp'));
+.directive('moveUp', require('./moveUp'))
+.directive('separator', require('./separator'))
+.directive('logo', require('./logo'))
+.directive('navigation', require('./navigation'));

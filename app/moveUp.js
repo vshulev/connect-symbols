@@ -1,21 +1,21 @@
 const $ = require('jquery');
 
-module.exports = csMoveUp;
+module.exports = moveUp;
 
-function csMoveUp() {
+function moveUp() {
   return {
     restrict: 'A',
     scope: {
       top: '@',
     },
-    link: csMoveUpLink,
+    link: moveUpLink,
   };
 
-  function csMoveUpLink(scope, elem, attr) {
+  function moveUpLink(scope, elem, attr) {
     let hasMoved = false;
-    $(window).scroll(moveUp);
+    $(window).scroll(move);
 
-    function moveUp() {
+    function move() {
       if (!hasMoved) {
         $(elem).animate({ top: scope.top });
       }
