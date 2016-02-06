@@ -12,6 +12,7 @@ angular.module('connect-symbols', [
 .directive('csContainer', require('./csContainer'))
 .directive('moveUp', require('./moveUp'))
 .directive('separator', require('./separator'))
+.directive('dynamicSeparator', require('./dynamicSeparator'))
 .directive('logo', require('./logo'))
 .directive('logoTop', require('./logoTop'))
 .directive('navigation', require('./navigation'))
