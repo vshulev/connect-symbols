@@ -26,7 +26,6 @@ gulp.task('build:dev', [
   'watch-css',
   'watch-html',
   'build-js:dev',
-  'build-content',
   'copy-static-assets',
 ], require('./tasks/run-dev-server'));
 
@@ -35,7 +34,6 @@ gulp.task('build:prod', [
   'build-css:prod',
   'copy-html',
   'build-js:prod',
-  'build-content',
   'copy-static-assets',
 ]);
 

@@ -8,6 +8,6 @@ angular.module('connect-symbols.routes', [])
   $stateProvider
     .state('home', {
       url: '',
-      template: '',
+      template: '<home></home>',
     });
 }]);
