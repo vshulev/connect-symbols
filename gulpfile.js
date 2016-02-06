@@ -1,9 +1,7 @@
 var gulp = require('gulp');
 var del  = require('del');
 
-gulp.task('clean', function() {
-  return del(['build/**/*']);
-});
+gulp.task('clean', () => del(['build/**/*']));
 
 // CSS
 gulp.task('build-css', require('./tasks/css/build-css'));
@@ -13,10 +11,6 @@ gulp.task('watch-css', ['build-css'], require('./tasks/css/watch-css'));
 // HTML
 gulp.task('copy-html', require('./tasks/html/copy-html'));
 gulp.task('watch-html', ['copy-html'], require('./tasks/html/watch-html'));
-
-// content
-// HACK throws an error if build directory doesn't exist, so need to wait for copy-html
-gulp.task('build-content', ['copy-html'], require('./tasks/build-content'));
 
 // static assets
 gulp.task('copy-images', require('./tasks/static/copy-images'));
@@ -32,8 +26,7 @@ gulp.task('build:dev', [
   'watch-css',
   'watch-html',
   'build-js:dev',
-  'build-content',
-  'copy-static-assets'
+  'copy-static-assets',
 ], require('./tasks/run-dev-server'));
 
 // production build
@@ -41,12 +34,11 @@ gulp.task('build:prod', [
   'build-css:prod',
   'copy-html',
   'build-js:prod',
-  'build-content',
-  'copy-static-assets'
+  'copy-static-assets',
 ]);
 
 // deploy
-gulp.task('deploy', ['build:prod'], require('./tasks/deploy'))
+gulp.task('deploy', ['build:prod'], require('./tasks/deploy'));
 
 // default task
 gulp.task('default', ['build:dev']);

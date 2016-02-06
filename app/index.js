@@ -4,13 +4,16 @@ module.exports = 'connect-symbols';
 
 angular.module('connect-symbols', [
   require('angular-ui-router'),
-  require('angular-sanitize'),
   require('./routes'),
   require('./home'),
-  require('./icon'),
-  require('./interview'),
-  require('./people'),
+  require('./themen'),
 ])
 
-.factory('Settings', require('./Settings'))
-.directive('csNav', require('./csNav'));
+.directive('csContainer', require('./csContainer'))
+.directive('moveUp', require('./moveUp'))
+.directive('separator', require('./separator'))
+.directive('dynamicSeparator', require('./dynamicSeparator'))
+.directive('logo', require('./logo'))
+.directive('logoTop', require('./logoTop'))
+.directive('navigation', require('./navigation'))
+.directive('staticNavigation', require('./staticNavigation'));
