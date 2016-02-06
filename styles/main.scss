@@ -9,24 +9,25 @@ $link-hover-decoration: none;
   background: #000;
   width: 10rem;
   height: 10rem;
-  position: relative;
-  top: 2.5rem;
-  margin: auto;
+  position: absolute;
+  top: 30rem;
+  margin-left: -5rem;
+  display: inline-block;
 }
 
 .cs-logo-top {
   @extend .cs-logo;
-  top: 7rem;
+  top: 5rem;
 }
 
 .cs-nav {
-  position: relative;
+  position: absolute;
   top: 100rem;
 }
 
 .cs-nav-static {
   @extend .cs-nav;
-  top: 7rem;
+  top: 5rem;
 }
 
 .cs-separator {

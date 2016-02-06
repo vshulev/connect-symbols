@@ -7,7 +7,9 @@ function logo() {
     restrict: 'E',
     replace: true,
     link: logoLink,
-    template: '<div move-up top="-20rem" class="cs-logo"></div>',
+    template: `
+      <div class="text-center"><div move-up top="5rem" class="cs-logo"></div>
+    `,
   };
 
   function logoLink(scope, elem, attr) {

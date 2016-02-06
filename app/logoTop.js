@@ -7,10 +7,12 @@ function logoTop() {
     restrict: 'E',
     replace: true,
     link: logoTopLink,
-    template: '<div class="cs-logo-top"></div>',
+    template: `
+      <div class="text-center"><div class="cs-logo-top"></div></div>
+    `,
   };
 
   function logoTopLink(scope, elem, attr) {
-    $(elem).animate({ top: '-5rem' });
+    $(elem).children().animate({ top: '-5rem' });
   }
 }

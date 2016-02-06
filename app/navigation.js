@@ -6,9 +6,9 @@ function navigation($rootScope) {
     restrict: 'E',
     link: navigationLink,
     template: `
-      <ul move-up top="-20rem" class="cs-nav">
-        <li>Das Projekt</li>
-        <li><a href="#" ui-sref="themen">Themen</a></li>
+      <ul move-up top="5rem" class="cs-nav">
+        <li><a ui-sref="home">Das Projekt</a></li>
+        <li><a ui-sref="themen">Themen</a></li>
         <li>Personen</li>
       </ul>
     `,
