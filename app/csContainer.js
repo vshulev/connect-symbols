@@ -17,7 +17,6 @@ function csContainer() {
   };
 
   function csContainerLink(scope, elem, attr) {
-    console.log(elem);
     $(elem).height($(window).height() + 10);
     $(elem).css({ overflow: 'hidden' });
   }

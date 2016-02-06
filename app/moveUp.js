@@ -16,9 +16,11 @@ function moveUp() {
     $(window).scroll(move);
 
     function move() {
-      if (!hasMoved) {
-        $(elem).animate({ top: scope.top });
-      }
+      scope.$apply(() => {
+        if (!hasMoved) {
+          $(elem).animate({ top: scope.top });
+        }
+      });
     }
   }
 }

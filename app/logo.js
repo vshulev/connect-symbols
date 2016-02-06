@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 module.exports = logo;
 
 function logo() {
@@ -9,6 +11,8 @@ function logo() {
   };
 
   function logoLink(scope, elem, attr) {
-    
+    scope.$on('cs:navigate', (event, target) => {
+      // TODO do smth...
+    });
   }
 }

@@ -14,6 +14,11 @@ $link-hover-decoration: none;
   margin: auto;
 }
 
+.cs-logo-top {
+  @extend: .cs-logo;
+  top: 1rem;
+}
+
 .cs-nav {
   position: relative;
   top: 100rem;
