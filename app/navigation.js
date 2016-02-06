@@ -8,7 +8,7 @@ function navigation($rootScope) {
     template: `
       <ul move-up top="-20rem" class="cs-nav">
         <li>Das Projekt</li>
-        <li><a href="#" ng-click="gotoThemen()">Themen</a></li>
+        <li><a href="#" ui-sref="themen">Themen</a></li>
         <li>Personen</li>
       </ul>
     `,

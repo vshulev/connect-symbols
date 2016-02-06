@@ -1,6 +1,5 @@
 const angular = require('angular');
-
-let name = 'connect-symbols.home';
+const name = 'connect-symbols.home';
 
 module.exports = name;
 

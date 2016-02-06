@@ -9,5 +9,10 @@ angular.module('connect-symbols.routes', [])
     .state('home', {
       url: '',
       template: '<home></home>',
+    })
+
+    .state('themen', {
+      url: '/themen',
+      template: '<themen></themen>',
     });
 }]);

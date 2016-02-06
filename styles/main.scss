@@ -15,13 +15,18 @@ $link-hover-decoration: none;
 }
 
 .cs-logo-top {
-  @extend: .cs-logo;
-  top: 1rem;
+  @extend .cs-logo;
+  top: 7rem;
 }
 
 .cs-nav {
   position: relative;
   top: 100rem;
+}
+
+.cs-nav-static {
+  @extend .cs-nav;
+  top: 7rem;
 }
 
 .cs-separator {
