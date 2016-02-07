@@ -5,6 +5,7 @@
       - /app
       - /styles
       - /tasks
+      - /fonts
       - _prose.yml
       - .gitignore
       - .travis.yml
