@@ -1,18 +1,25 @@
+@import 'fonts.scss';
+
+$font-family-sans-serif: 'museo_slab';
+$text-color: #000;
 $brand-info: #2de6e6;
 $brand-danger: #eb0000;
+$link-color: $text-color;
 $link-hover-color: $brand-info;
 $link-hover-decoration: none;
 
 @import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .cs-logo {
-  background: #000;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 20rem;
   position: absolute;
-  top: 30rem;
-  margin-left: -5rem;
+  top: 27.4rem;
+  margin-left: -7.5rem;
   display: inline-block;
+  background-image: url("/images/logo.png");
+  background-size: 15rem;
+  background-repeat: no-repeat;
 }
 
 .cs-logo-top {
@@ -22,12 +29,13 @@ $link-hover-decoration: none;
 
 .cs-logo-static {
   @extend .cs-logo;
-  top: -5rem;
+  top: -8rem;
 }
 
 .cs-nav {
   position: absolute;
   top: 100rem;
+  list-style-type: none;
 }
 
 .cs-nav-static {
@@ -39,6 +47,7 @@ $link-hover-decoration: none;
   position: absolute;
   left: 1rem;
   top: 18rem;
+  list-style-type: none;
 }
 
 .cs-nav-side-dynamic {
@@ -46,13 +55,23 @@ $link-hover-decoration: none;
   top: 100rem;
 }
 
+.cs-nav-side-hover-area {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  width: 25%;
+  height: 100%;
+}
+
 .cs-separator {
-  background: blue;
-  width: 20rem;
-  height: 0.2rem;
+  width: 30rem;
+  height: 1rem;
   position: relative;
   top: 35rem;
   margin: auto;
+  background-image: url("/images/separator.png");
+  background-size: 30rem;
+  background-repeat: no-repeat;
 }
 
 .cs-separator-top {
