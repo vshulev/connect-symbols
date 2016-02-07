@@ -1,6 +1,6 @@
 const $ = require('jquery');
 
-import { Directive } from './shim/Directive';
+import { Directive } from '../shim/Directive';
 
 export class CsContainer extends Directive {
   constructor() {

@@ -8,5 +8,5 @@ module.exports = name;
 
 angular.module(name, [])
 
-.directive('moveUp', MoveUp.create(MoveUp))
-.directive('moveUpScroll', MoveUpScroll.create(MoveUpScroll));
+.directiveClass('moveUp', MoveUp)
+.directiveClass('moveUpScroll', MoveUpScroll);
