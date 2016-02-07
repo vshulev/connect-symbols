@@ -19,6 +19,8 @@ angular.module = function(name, deps) {
 
 angular.module('connect-symbols', [
   require('angular-ui-router'),
+  require('angular-sanitize'),
+
   require('./animation'),
   require('./data'),
   require('./home'),

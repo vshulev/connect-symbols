@@ -4,7 +4,7 @@
     line1\n
     line2
   interview: andrean-nachev
-  side: left
+  side: right
   topic: Das ist ein Designer
   category: Was ist ein Designer?
 - name: Ida Storm Jansen
@@ -13,6 +13,6 @@
     line1\n
     line2
   interview: ida-storm-jansen
-  side: right
+  side: left
   topic: Das ist ein Designer
   category: Was ist ein Designer?
