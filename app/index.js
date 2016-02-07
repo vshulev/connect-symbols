@@ -19,10 +19,11 @@ angular.module = function(name, deps) {
 angular.module('connect-symbols', [
   require('angular-ui-router'),
   require('./animation'),
-  require('./ui'),
   require('./routes'),
   require('./home'),
+  require('./personen'),
   require('./themen'),
+  require('./ui'),
 ])
 
 .directive('navigation', require('./navigation'))
