@@ -20,6 +20,11 @@ $link-hover-decoration: none;
   top: 5rem;
 }
 
+.cs-logo-static {
+  @extend .cs-logo;
+  top: -5rem;
+}
+
 .cs-nav {
   position: absolute;
   top: 100rem;
