@@ -2,11 +2,13 @@ var annotate   = require('gulp-ng-annotate');
 var babelify   = require('babelify');
 var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
+var globify    = require('require-globify');
 var gulp       = require('gulp');
 var gutil      = require('gulp-util');
+var markdown   = require('browserify-markdown');
 var source     = require('vinyl-source-stream');
 var uglify     = require('gulp-uglify');
-var watchify   = require('watchify');
+var yamlify    = require('yamlify');
 
 function bundle(b) {
   return b
@@ -20,7 +22,10 @@ function bundle(b) {
 
 module.exports = function() {
   var b = browserify({ entries: ['app/index.js'], debug: true })
-    .transform(babelify, { presets: ['es2015'] });
+    .transform(babelify, { presets: ['es2015'] })
+    .transform(yamlify)
+    .transform(markdown())
+    .transform(globify);
   b.on('update', bundle.bind({ b: b }));
   b.on('log', gutil.log);
   return bundle(b);

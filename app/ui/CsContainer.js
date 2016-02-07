@@ -10,7 +10,7 @@ export class CsContainer extends Directive {
     this.transclude = true;
     this.replace = true;
     this.template = `
-      <div class="container">
+      <div class="container-fluid">
         <div class="row" ng-transclude>
         </div>
       </div>
@@ -18,7 +18,7 @@ export class CsContainer extends Directive {
   }
 
   link(scope, elem, attr) {
-    $(elem).height($(window).height() + 10);
+    $(elem).height($(window).height());
     $(elem).css({ overflow: 'hidden' });
   }
 }

@@ -1,0 +1,22 @@
+- name: AndreanNechev
+  photo: AndreanNechev
+  description: |
+    line1\n
+    line2
+  interview: andrean-nachev
+  side: left
+  topic: Das ist ein Designer
+  category: Was ist ein Designer?
+- name: Ida Storm Jansen
+  photo: IdaStormJansen
+  description: |
+    line1\n
+    line2
+  interview: ida-storm-jansen
+  side: right
+  topic: Das ist ein Designer
+  category: Was ist ein Designer?
+- name:
+  photo:
+  description:
+  

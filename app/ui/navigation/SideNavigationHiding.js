@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 import { SideNavigation } from './SideNavigation';
 
 export class SideNavigationHiding extends SideNavigation {
@@ -12,6 +14,8 @@ export class SideNavigationHiding extends SideNavigation {
   }
 
   link(scope, elem, attr) {
+    $(elem).height($(window).height());
+
     this.sidenav = elem.children();
     this._hide();
 
