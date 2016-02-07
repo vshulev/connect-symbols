@@ -38,6 +38,11 @@ $link-hover-decoration: none;
 .cs-nav-side {
   position: absolute;
   left: 1rem;
+  top: 18rem;
+}
+
+.cs-nav-side-dynamic {
+  @extend .cs-nav-side;
   top: 100rem;
 }
 
