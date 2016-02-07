@@ -20,6 +20,11 @@ $link-hover-decoration: none;
   top: 5rem;
 }
 
+.cs-logo-static {
+  @extend .cs-logo;
+  top: -5rem;
+}
+
 .cs-nav {
   position: absolute;
   top: 100rem;
@@ -33,6 +38,11 @@ $link-hover-decoration: none;
 .cs-nav-side {
   position: absolute;
   left: 1rem;
+  top: 18rem;
+}
+
+.cs-nav-side-dynamic {
+  @extend .cs-nav-side;
   top: 100rem;
 }
 
@@ -45,7 +55,12 @@ $link-hover-decoration: none;
   margin: auto;
 }
 
-.cs-home-text {
+.cs-separator-top {
+  @extend .cs-separator;
+  top: 18rem;
+}
+
+.cs-paragraph {
   position: relative;
   top: 100rem;
   padding-bottom: 5rem;

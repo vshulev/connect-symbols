@@ -3,8 +3,9 @@ const $ = require('jquery');
 import { MoveUp } from './MoveUp';
 
 export class MoveUpScroll extends MoveUp {
-  constructor() {
-    super();
+  /*@ngInject*/
+  constructor(MoveService) {
+    super(MoveService);
   }
 
   link(scope, elem, attr) {
@@ -12,7 +13,7 @@ export class MoveUpScroll extends MoveUp {
     $(window).scroll(() => {
       scope.$apply(() => {
         if (!hasMoved) {
-          $(elem).animate({ top: scope.top }, 1000);
+          this.move(elem, { top: scope.top });
         }
       });
     });

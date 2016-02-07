@@ -23,8 +23,8 @@ function bundle() {
     .pipe(gulp.dest('build'));
 }
 
-w.on('update', bundle);
-w.on('log', gutil.log);
+b.on('update', bundle);
+b.on('log', gutil.log);
 
 module.exports = function() {
   return bundle();

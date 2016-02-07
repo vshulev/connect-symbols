@@ -5,9 +5,10 @@ export class SideNav extends Directive {
     super();
 
     this.restrict = 'E';
+    this.replace = true;
     this.template = `
-      <ul move-up top="18rem" class="cs-nav-side">
-        <li>Was ist ein Designer?</li>
+      <ul class="cs-nav-side">
+        <li><a ui-sref="thema({ id: 123 })">Was ist ein Designer?</a></li>
         <li>Wandel & Zukunft des Designberufs</li>
         <li>Interessenvertretung</li>
         <li>Diskussion</li>
