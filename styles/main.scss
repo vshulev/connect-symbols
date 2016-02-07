@@ -1,5 +1,6 @@
 @import 'fonts.scss';
 
+$grid-columns: 10;
 $font-family-sans-serif: 'museo_slab';
 $text-color: #000;
 $brand-info: #2de6e6;
@@ -45,7 +46,6 @@ $link-hover-decoration: none;
 
 .cs-nav-side {
   position: absolute;
-  left: 1rem;
   top: 18rem;
   list-style-type: none;
 }
@@ -64,13 +64,13 @@ $link-hover-decoration: none;
 }
 
 .cs-separator {
-  width: 30rem;
+  width: 25rem;
   height: 1rem;
   position: relative;
   top: 35rem;
   margin: auto;
   background-image: url("/images/separator.png");
-  background-size: 30rem;
+  background-size: 25rem;
   background-repeat: no-repeat;
 }
 

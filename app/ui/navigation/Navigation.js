@@ -8,6 +8,7 @@ export class Navigation extends NavigationStatic {
   }
 
   link(scope, elem, attr) {
+    console.log('should move');
     this.move(elem, { top: '5rem' });
   }
 }

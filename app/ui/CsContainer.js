@@ -10,7 +10,7 @@ export class CsContainer extends Directive {
     this.transclude = true;
     this.replace = true;
     this.template = `
-      <div class="container">
+      <div class="container-fluid">
         <div class="row" ng-transclude>
         </div>
       </div>
