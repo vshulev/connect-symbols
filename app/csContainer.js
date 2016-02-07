@@ -4,6 +4,8 @@ import { Directive } from './shim/Directive';
 
 export class CsContainer extends Directive {
   constructor() {
+    super();
+
     this.restrict = 'E';
     this.transclude = true;
     this.replace = true;
