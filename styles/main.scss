@@ -1,5 +1,9 @@
+@import 'fonts.scss';
+
+$font-family-sans-serif: 'museo_slab';
 $brand-info: #2de6e6;
 $brand-danger: #eb0000;
+$link-color: #000;
 $link-hover-color: $brand-info;
 $link-hover-decoration: none;
 
@@ -30,6 +34,7 @@ $link-hover-decoration: none;
 .cs-nav {
   position: absolute;
   top: 100rem;
+  list-style-type: none;
 }
 
 .cs-nav-static {
