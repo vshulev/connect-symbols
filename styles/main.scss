@@ -101,3 +101,7 @@ $link-hover-decoration: none;
 .home-text {
   color: $alternate-color;
 }
+
+.thema-person-card-right {
+  @extend .text-right;
+}

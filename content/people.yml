@@ -1,10 +1,10 @@
-- name: AndreanNechev
+- name: Andrean Nechev
   photo: AndreanNechev
   description: |
     line1\n
     line2
   interview: andrean-nachev
-  side: left
+  side: right
   topic: Das ist ein Designer
   category: Was ist ein Designer?
 - name: Ida Storm Jansen
@@ -13,10 +13,15 @@
     line1\n
     line2
   interview: ida-storm-jansen
-  side: right
+  side: left
   topic: Das ist ein Designer
   category: Was ist ein Designer?
-- name:
-  photo:
-  description:
-  
+- name: Joachim Kobuss
+  photo: JoachimKobuss
+  description: |
+    line1\n
+    line2
+  interview: andrean-nachev
+  side: left
+  topic: Das ist ein Designer
+  category: Was ist ein Designer?

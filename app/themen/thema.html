@@ -6,14 +6,21 @@
   <div class="col-sm-2">
     <separator-top></separator-top>
     <paragraph-top>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sem nec orci ultrices accumsan id at lectus. Nulla facilisi. Nulla vulputate lectus elementum, faucibus sapien quis, feugiat nulla. Integer sit amet elit sed lacus bibendum placerat ac non massa. Duis molestie, velit a tempor dapibus, massa ligula varius leo, vitae hendrerit purus justo posuere nulla. Vivamus magna erat, porttitor nec magna quis, iaculis tristique diam.
+      <div ng-bind-html="selected.left.interview"></div>
     </paragraph-top>
   </div>
 
   <div class="col-sm-2">
     <separator-top></separator-top>
     <paragraph-top>
-      STEFFEN SCHUHMAN
+      <div
+        ng-repeat="person in people"
+        ng-click="select(person)"
+        class="thema-person-card"
+        ng-class="{ 'thema-person-card-left': person.side === 'left', 'thema-person-card-right': person.side === 'right' }">
+        <p>{{ person.name }}</p>
+        <p ng-bind-html="person.description"></p>
+      </div>
     </paragraph-top>
 
     <logo-static></logo-static>
@@ -22,7 +29,7 @@
   <div class="col-sm-2">
     <separator-top></separator-top>
     <paragraph-top>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sem nec orci ultrices accumsan id at lectus. Nulla facilisi. Nulla vulputate lectus elementum, faucibus sapien quis, feugiat nulla. Integer sit amet elit sed lacus bibendum placerat ac non massa. Duis molestie, velit a tempor dapibus, massa ligula varius leo, vitae hendrerit purus justo posuere nulla. Vivamus magna erat, porttitor nec magna quis, iaculis tristique diam.
+      <div ng-bind-html="selected.right.interview"></div>
     </paragraph-top>
     <static-navigation></static-navigation>
   </div>
