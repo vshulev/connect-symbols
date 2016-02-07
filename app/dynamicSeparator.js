@@ -6,11 +6,6 @@ function dynamicSeparator() {
   return {
     restrict: 'E',
     replace: true,
-    link: dynamicSeparatorLink,
-    template: '<div class="cs-separator"></div>',
+    template: '<div move-up top="18rem" class="cs-separator"></div>',
   };
-
-  function dynamicSeparatorLink(scope, elem, attr) {
-    $(elem).animate({ top: '18rem' });
-  }
 }

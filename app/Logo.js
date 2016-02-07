@@ -10,7 +10,7 @@ export class Logo extends Directive {
     this.restrict = 'E';
     this.replace = true;
     this.template = `
-      <div class="text-center"><div move-up top="5rem" class="cs-logo"></div>
+      <div class="text-center"><div move-up-scroll top="5rem" class="cs-logo"></div>
     `;
   }
 }
