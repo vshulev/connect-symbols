@@ -1,8 +1,8 @@
 const angular = require('angular');
 
-module.exports = 'connect-symbols';
+import { Logo } from './logo';
 
-console.log(angular.module);
+module.exports = 'connect-symbols';
 
 angular.module('connect-symbols', [
   require('angular-ui-router'),
@@ -15,7 +15,7 @@ angular.module('connect-symbols', [
 .directive('moveUp', require('./moveUp'))
 .directive('separator', require('./separator'))
 .directive('dynamicSeparator', require('./dynamicSeparator'))
-.directive('logo', require('./logo'))
+.directive('logo', () => new Logo())
 .directive('logoTop', require('./logoTop'))
 .directive('navigation', require('./navigation'))
 .directive('staticNavigation', require('./staticNavigation'));

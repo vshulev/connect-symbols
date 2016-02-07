@@ -1,20 +1,20 @@
 const $ = require('jquery');
 
-module.exports = logo;
+import { Directive } from './shim/Directive';
 
-function logo() {
-  return {
-    restrict: 'E',
-    replace: true,
-    link: logoLink,
-    template: `
+export class Logo extends Directive {
+  constructor() {
+    super();
+    console.log('done constructing...');
+
+    this.restrict = 'E';
+    this.replace = true;
+    this.template = `
       <div class="text-center"><div move-up top="5rem" class="cs-logo"></div>
-    `,
-  };
+    `;
+  }
 
-  function logoLink(scope, elem, attr) {
-    scope.$on('cs:navigate', (event, target) => {
-      // TODO do smth...
-    });
+  link(scope, elem, attr) {
+    console.log('hello, I am link..', this.restrict, '..and I have kept my binding');
   }
 }
