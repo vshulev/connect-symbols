@@ -1,19 +1,21 @@
 <cs-container>
-  <div class="col-sm-2">
-    <dynamic-side-navigation></dynamic-side-navigation>
-  </div>
-
-  <div class="col-sm-2">
+  <div class="col-sm-offset-2 col-sm-2">
     <dynamic-separator></dynamic-separator>
     <paragraph-top>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sem nec orci ultrices accumsan id at lectus. Nulla facilisi. Nulla vulputate lectus elementum, faucibus sapien quis, feugiat nulla. Integer sit amet elit sed lacus bibendum placerat ac non massa. Duis molestie, velit a tempor dapibus, massa ligula varius leo, vitae hendrerit purus justo posuere nulla. Vivamus magna erat, porttitor nec magna quis, iaculis tristique diam.
+      <div ng-repeat="person in people" ng-click="select(person)">
+        <p>{{ person.name }}</p>
+        <p ng-bind-html="person.description"></p>
+      </div>
     </paragraph-top>
   </div>
 
   <div class="col-sm-2">
     <dynamic-separator></dynamic-separator>
     <paragraph-top>
-      STEFFEN SCHUHMAN
+      <img
+        class="img-responsive"
+        alt="{{ selected.person.name }}"
+        ng-src="/images/people/{{ selected.person.photo }}.png">
     </paragraph-top>
 
     <logo-static></logo-static>
@@ -22,7 +24,7 @@
   <div class="col-sm-2">
     <dynamic-separator></dynamic-separator>
     <paragraph-top>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sem nec orci ultrices accumsan id at lectus. Nulla facilisi. Nulla vulputate lectus elementum, faucibus sapien quis, feugiat nulla. Integer sit amet elit sed lacus bibendum placerat ac non massa. Duis molestie, velit a tempor dapibus, massa ligula varius leo, vitae hendrerit purus justo posuere nulla. Vivamus magna erat, porttitor nec magna quis, iaculis tristique diam.
+      <div ng-bind-html="selected.person.interview"></div>
     </paragraph-top>
     <static-navigation></static-navigation>
   </div>

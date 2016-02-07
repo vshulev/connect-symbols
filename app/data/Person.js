@@ -4,7 +4,10 @@ export class Person {
   /*@ngInject*/
   constructor(Interview) {
     this._people = require('../../content/people.yml');
-    this._people.forEach((person) => person.interview = Interview.get(person.interview));
+    this._people.forEach((person) => {
+      person.interview = Interview.get(person.interview);
+      person.description = person.description.replace(/\\n/g, '<br>');
+    });
   }
 
   all() {
