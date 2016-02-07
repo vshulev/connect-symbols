@@ -1,6 +1,6 @@
 import { Directive } from '../../shim/Directive';
 
-export class SideNav extends Directive {
+export class SideNavigation extends Directive {
   constructor() {
     super();
 

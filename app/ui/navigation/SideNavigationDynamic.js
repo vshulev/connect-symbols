@@ -1,6 +1,6 @@
-import { SideNav } from './SideNav';
+import { SideNavigation } from './SideNavigation';
 
-export class SideNavDynamic extends SideNav {
+export class SideNavigationDynamic extends SideNavigation {
   /*@ngInject*/
   constructor(MoveService) {
     super();

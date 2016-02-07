@@ -1,12 +1,12 @@
 const angular = require('angular');
 const name = 'connect-symbols.ui.navigation';
 
-import { SideNav } from './SideNav';
-import { SideNavDynamic } from './SideNavDynamic';
+import { SideNavigation } from './SideNavigation';
+import { SideNavigationDynamic } from './SideNavigationDynamic';
 
 module.exports = name;
 
 angular.module(name, [])
 
-.directiveClass('sideNav', SideNav)
-.directiveClass('sideNavDynamic', SideNavDynamic);
+.directiveClass('sideNavigation', SideNavigation)
+.directiveClass('dynamicSideNavigation', SideNavigationDynamic);
