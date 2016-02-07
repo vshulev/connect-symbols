@@ -6,13 +6,15 @@ $link-hover-decoration: none;
 @import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .cs-logo {
-  background: #000;
   width: 10rem;
-  height: 10rem;
+  height: 20rem;
   position: absolute;
   top: 30rem;
   margin-left: -5rem;
   display: inline-block;
+  background-image: url("/images/logo.png");
+  background-size: 10rem;
+  background-repeat: no-repeat;
 }
 
 .cs-logo-top {
