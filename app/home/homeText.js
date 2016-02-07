@@ -6,7 +6,7 @@ function homeText() {
     transclude: true,
     replace: true,
     template: `
-      <div move-up-scroll top="42rem" class="cs-home-text">
+      <div move-up top="42rem" class="cs-home-text">
         <ng-transclude></ng-transclude>
       </div>
     `,

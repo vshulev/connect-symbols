@@ -1,20 +1,16 @@
-const $ = require('jquery');
-
 import { Directive } from '../shim/Directive';
 
-export class MoveUp extends Directive {
+export class MoveLeft extends Directive {
   /*@ngInject*/
   constructor(MoveService) {
     super();
-
     this.move = MoveService.move;
-    this.restrict = 'A';
     this.scope = {
-      top: '@',
+      left: '@',
     };
   }
 
   link(scope, elem, attr) {
-    this.move(elem, { top: scope.top });
+    this.move(elem, { left: scope.left });
   }
 }
