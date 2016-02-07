@@ -18,6 +18,12 @@ export class Thema extends Directive {
     scope.selected = {};
     scope.selected.left = this._firstLeft(scope.people);
     scope.selected.right = this._firstRight(scope.people);
+
+    scope.select = function(person) {
+      person.side === 'left'
+        ? scope.selected.left = person
+        : scope.selected.right = person;
+    };
   }
 
   _firstLeft(people) {

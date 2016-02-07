@@ -13,7 +13,7 @@
   <div class="col-sm-2">
     <separator-top></separator-top>
     <paragraph-top>
-      <p ng-repeat="person in people">{{ person.name }}</p>
+      <p ng-repeat="person in people" ng-click="select(person)">{{ person.name }}</p>
     </paragraph-top>
 
     <logo-static></logo-static>
