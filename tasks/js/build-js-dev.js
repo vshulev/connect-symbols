@@ -7,9 +7,11 @@ var gutil      = require('gulp-util');
 var source     = require('vinyl-source-stream');
 var sourcemaps = require('gulp-sourcemaps');
 var watchify   = require('watchify');
+var yamlify    = require('yamlify');
 
 var b = browserify({ entries: ['app/index.js'], debug: true })
-  .transform(babelify, { presets: ['es2015'] });
+  .transform(babelify, { presets: ['es2015'] })
+  .transform(yamlify);
 var w = watchify(b);
 
 function bundle() {

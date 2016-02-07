@@ -6,7 +6,7 @@ var gulp       = require('gulp');
 var gutil      = require('gulp-util');
 var source     = require('vinyl-source-stream');
 var uglify     = require('gulp-uglify');
-var watchify   = require('watchify');
+var yamlify    = require('yamlify');
 
 function bundle(b) {
   return b
@@ -20,7 +20,8 @@ function bundle(b) {
 
 module.exports = function() {
   var b = browserify({ entries: ['app/index.js'], debug: true })
-    .transform(babelify, { presets: ['es2015'] });
+    .transform(babelify, { presets: ['es2015'] })
+    .transform(yamlify);
   b.on('update', bundle.bind({ b: b }));
   b.on('log', gutil.log);
   return bundle(b);
