@@ -31,6 +31,6 @@ export class Thema extends Directive {
   }
 
   _firstRight(people) {
-    return _.filter(people, { side: 'left' })[0];
+    return _.filter(people, { side: 'right' })[0];
   }
 }

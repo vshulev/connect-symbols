@@ -13,7 +13,14 @@
   <div class="col-sm-2">
     <separator-top></separator-top>
     <paragraph-top>
-      <p ng-repeat="person in people" ng-click="select(person)">{{ person.name }}</p>
+      <div
+        ng-repeat="person in people"
+        ng-click="select(person)"
+        class="thema-person-card"
+        ng-class="{ 'thema-person-card-left': person.side === 'left', 'thema-person-card-right': person.side === 'right' }">
+        <p>{{ person.name }}</p>
+        <p ng-bind-html="person.description"></p>
+      </div>
     </paragraph-top>
 
     <logo-static></logo-static>
