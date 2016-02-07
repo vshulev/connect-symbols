@@ -8,6 +8,7 @@ module.exports = name;
 angular.module(name, [
   require('./logo'),
   require('./navigation'),
+  require('./separator'),
 ])
 
 .directiveClass('csContainer', CsContainer);

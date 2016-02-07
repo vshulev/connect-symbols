@@ -25,7 +25,5 @@ angular.module('connect-symbols', [
   require('./themen'),
 ])
 
-.directive('separator', require('./separator'))
-.directive('dynamicSeparator', require('./dynamicSeparator'))
 .directive('navigation', require('./navigation'))
 .directive('staticNavigation', require('./staticNavigation'));
