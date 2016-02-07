@@ -1,6 +1,7 @@
 const angular = require('angular');
 
 import { Logo } from './Logo';
+import { CsContainer } from './CsContainer';
 
 module.exports = 'connect-symbols';
 
@@ -11,7 +12,7 @@ angular.module('connect-symbols', [
   require('./themen'),
 ])
 
-.directive('csContainer', require('./csContainer'))
+.directive('csContainer', CsContainer.create(CsContainer))
 .directive('moveUp', require('./moveUp'))
 .directive('separator', require('./separator'))
 .directive('dynamicSeparator', require('./dynamicSeparator'))
