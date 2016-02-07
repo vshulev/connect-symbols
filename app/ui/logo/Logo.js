@@ -1,4 +1,4 @@
-import { Directive } from './shim/Directive';
+import { Directive } from '../../shim/Directive';
 
 export class Logo extends Directive {
   constructor() {

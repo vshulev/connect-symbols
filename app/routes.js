@@ -14,5 +14,10 @@ angular.module('connect-symbols.routes', [])
     .state('themen', {
       url: '/themen',
       template: '<themen></themen>',
+    })
+
+    .state('thema', {
+      url: '/thema/:id',
+      template: '<thema></thema>',
     });
 }]);

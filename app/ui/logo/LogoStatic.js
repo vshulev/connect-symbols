@@ -1,6 +1,6 @@
 import { Directive } from '../../shim/Directive';
 
-class LogoStatic extends Directive {
+export class LogoStatic extends Directive {
   constructor() {
     super();
 

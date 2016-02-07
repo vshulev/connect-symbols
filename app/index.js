@@ -1,7 +1,6 @@
 const angular = require('angular');
 
 import { Directive } from './shim/Directive';
-import { Logo } from './Logo';
 
 module.exports = 'connect-symbols';
 
