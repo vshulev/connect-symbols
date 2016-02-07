@@ -18,7 +18,7 @@ export class CsContainer extends Directive {
   }
 
   link(scope, elem, attr) {
-    $(elem).height($(window).height() + 10);
+    $(elem).height($(window).height());
     $(elem).css({ overflow: 'hidden' });
   }
 }

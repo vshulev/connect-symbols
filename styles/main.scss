@@ -3,8 +3,9 @@
 $grid-columns: 10;
 $font-family-sans-serif: 'museo_slab';
 $text-color: #000;
-$brand-info: #2de6e6;
+$brand-info: #00C8BE;
 $brand-danger: #eb0000;
+$alternate-color: #6F6F6F;
 $link-color: $text-color;
 $link-hover-color: $brand-info;
 $link-hover-decoration: none;
@@ -48,6 +49,19 @@ $link-hover-decoration: none;
   position: absolute;
   top: 18rem;
   list-style-type: none;
+  color: $alternate-color;
+
+  a {
+    color: $alternate-color;
+  }
+
+  a:hover {
+    color: $brand-info;
+  }
+
+  h4 {
+    margin-top: 0px;
+  }
 }
 
 .cs-nav-side-dynamic {
@@ -82,4 +96,8 @@ $link-hover-decoration: none;
   position: relative;
   top: 100rem;
   padding-bottom: 5rem;
+}
+
+.home-text {
+  color: $alternate-color;
 }
