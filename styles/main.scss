@@ -50,6 +50,11 @@ $link-hover-decoration: none;
   margin: auto;
 }
 
+.cs-separator-top {
+  @extend .cs-separator;
+  top: 18rem;
+}
+
 .cs-home-text {
   position: relative;
   top: 100rem;
