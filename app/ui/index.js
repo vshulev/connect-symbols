@@ -8,6 +8,7 @@ module.exports = name;
 angular.module(name, [
   require('./logo'),
   require('./navigation'),
+  require('./paragraph'),
   require('./separator'),
 ])
 
