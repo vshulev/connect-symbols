@@ -63,13 +63,13 @@ $link-hover-decoration: none;
 }
 
 .cs-separator {
-  width: 25rem;
+  width: 100%;
   height: 1rem;
   position: relative;
   top: 35rem;
   margin: auto;
   background-image: url("/images/separator.png");
-  background-size: 25rem;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
