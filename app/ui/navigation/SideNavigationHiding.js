@@ -4,8 +4,8 @@ import { SideNavigation } from './SideNavigation';
 
 export class SideNavigationHiding extends SideNavigation {
   /*@ngInject*/
-  constructor(MoveService) {
-    super();
+  constructor(MoveService, Category) {
+    super(Category);
     this.move = MoveService.move;
     this.template =
       '<div class="cs-nav-side-hover-area">' +
@@ -14,6 +14,8 @@ export class SideNavigationHiding extends SideNavigation {
   }
 
   link(scope, elem, attr) {
+    super.link(scope, elem, attr);
+
     $(elem).height($(window).height());
 
     this.sidenav = elem.children();

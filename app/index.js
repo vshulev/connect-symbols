@@ -4,9 +4,6 @@ import { Directive } from './shim/Directive';
 
 module.exports = 'connect-symbols';
 
-let yaml = require('../content/people.yml');
-console.log(yaml);
-
 // extend angular with the directiveClass function
 // which enables registering ES6 classes as directives
 let moduleFn = angular.module.bind(angular);
