@@ -1,3 +1,4 @@
+var annotate   = require('gulp-ng-annotate');
 var babelify   = require('babelify');
 var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
@@ -12,6 +13,7 @@ function bundle(b) {
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
+    .pipe(annotate())
     .pipe(uglify())
     .pipe(gulp.dest('build'));
 }
