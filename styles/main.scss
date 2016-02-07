@@ -1,9 +1,10 @@
 @import 'fonts.scss';
 
 $font-family-sans-serif: 'museo_slab';
+$text-color: #000;
 $brand-info: #2de6e6;
 $brand-danger: #eb0000;
-$link-color: #000;
+$link-color: $text-color;
 $link-hover-color: $brand-info;
 $link-hover-decoration: none;
 

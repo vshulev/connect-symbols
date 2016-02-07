@@ -24,7 +24,4 @@ angular.module('connect-symbols', [
   require('./personen'),
   require('./themen'),
   require('./ui'),
-])
-
-.directive('navigation', require('./navigation'))
-.directive('staticNavigation', require('./staticNavigation'));
+]);
