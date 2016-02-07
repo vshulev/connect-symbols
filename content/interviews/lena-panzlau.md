@@ -1,7 +1,3 @@
-Interview Lena Panzlau 
-http://www.panzlau-prugger.de/
-unterrichtet an der Weißensee Kunsthochschule Berlin  
-
 Wie verändert der gesellschaftliche Wandel den Beruf des Designers aus Deiner Sicht? (z.B. die Digitalisierung)
 
 Ich glaube, dass es nie einen Beruf gab, der so dem Wandel unterworfen war wie Design. Weil Design sich immer schon an alle diese Geschichten angepasst hat. Ich komme aus einer Familie von Kommunikationsdesignern. Als ich klein war, lagen überall Handfeger für Radiergummischnipsel, LetrasetBuchstaben. Es gab keinen Computer, es gab nichts. Die mussten sich anpassen. Wir müssen uns genauso anpassen und unsere Rolle neu erfinden. Nenne mir einen anderen Beruf, der sich so oft verändert hat. Wir arbeiten ja so nah dran an diesen gesellschaftlichen Dingen, dass wir uns da anpassen müssen. Wie der sich verändert? Er verändert sich einfach stetig mit mit diesen neuen Herausforderungen. Welche gesellschaftlichen Veränderungen meinst Du konkret? 
