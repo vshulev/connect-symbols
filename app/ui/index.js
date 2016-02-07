@@ -5,6 +5,8 @@ import { CsContainer } from './CsContainer';
 
 module.exports = name;
 
-angular.module(name, [])
+angular.module(name, [
+  require('./navigation'),
+])
 
 .directiveClass('csContainer', CsContainer);
