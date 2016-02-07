@@ -16,3 +16,12 @@
   side: left
   topic: Das ist ein Designer
   category: Was ist ein Designer?
+- name: Joachim Kobuss
+  photo: JoachimKobuss
+  description: |
+    line1\n
+    line2
+  interview: ida-storm-jansen
+  side: left
+  topic: Das ist ein Designer
+  category: Was ist ein Designer?
