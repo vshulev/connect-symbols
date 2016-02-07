@@ -1,3 +1,4 @@
+var annotate   = require('gulp-ng-annotate');
 var babelify   = require('babelify');
 var browserify = require('browserify');
 var buffer     = require('vinyl-buffer');
@@ -15,6 +16,7 @@ function bundle() {
   return w
     .bundle()
     .pipe(source('app.js'))
+    .pipe(annotate())
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sourcemaps.write('./'))
