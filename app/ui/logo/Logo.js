@@ -1,9 +1,6 @@
-const $ = require('jquery');
-
 import { Directive } from './shim/Directive';
 
 export class Logo extends Directive {
-  /*@ngInject*/
   constructor() {
     super();
 

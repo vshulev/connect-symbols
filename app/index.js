@@ -28,7 +28,5 @@ angular.module('connect-symbols', [
 
 .directive('separator', require('./separator'))
 .directive('dynamicSeparator', require('./dynamicSeparator'))
-.directiveClass('logo', Logo)
-.directive('logoTop', require('./logoTop'))
 .directive('navigation', require('./navigation'))
 .directive('staticNavigation', require('./staticNavigation'));
