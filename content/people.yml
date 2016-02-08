@@ -1,8 +1,8 @@
 - name: Andrean Nechev
   photo: AndreanNechev
   description: |
-    line1\n
-    line2
+    Gründer von http://poststudio.bg\n
+    Sofia, Bulgarien
   interview: andrean-nechev
   side: right
   topic: Das ist ein Designer
@@ -10,8 +10,8 @@
 - name: Ida Storm Jansen
   photo: IdaStormJansen
   description: |
-    line1\n
-    line2
+    Unternehmensberaterin\n
+    http://stormjansen.com/
   interview: ida-storm-jansen
   side: left
   topic: Das ist ein Designer
