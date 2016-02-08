@@ -1,20 +1,21 @@
 - name: Andrean Nechev
   photo: AndreanNechev
   description: |
-    Gründer von http://poststudio.bg\n
-    Sofia, Bulgarien
+    Gründer von poststudio.bg\n
+    Sofia, Bulgarien\n
+    Absolvent der FH Düsseldorf
   interview: andrean-nechev
   side: right
-  topic: Das ist ein Designer
-  category: Was ist ein Designer?
+  topic: The designer as an initiator
+  category: Wandel & Zukunft des Designberufs
 - name: Ida Storm Jansen
   photo: IdaStormJansen
   description: |
     Unternehmensberaterin\n
-    http://stormjansen.com/
+    stormjansen.com
   interview: ida-storm-jansen
   side: left
-  topic: Das ist ein Designer
+  topic: Grenzüberschreitungen/ Interdisziplinarität
   category: Was ist ein Designer?
 - name: Joachim Kobuss
   photo: JoachimKobuss
@@ -23,5 +24,5 @@
     line2
   interview: joachim-kobuss
   side: left
-  topic: Das ist ein Designer
+  topic: Bilden Hochschulen für die Gegenwart oder für die Zukunft aus?
   category: Was ist ein Designer?
