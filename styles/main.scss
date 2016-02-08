@@ -38,6 +38,11 @@ $link-hover-decoration: none;
   position: absolute;
   top: 100rem;
   list-style-type: none;
+
+  li.active {
+    border: 6px solid transparent;
+    border-image: url("/images/border.png") 20 round;
+  }
 }
 
 .cs-nav-static {
@@ -105,6 +110,7 @@ $link-hover-decoration: none;
   h2 {
     font-size: $font-size-base;
     color: $alternate-color;
+    margin-top: 0px;
   }
 }
 

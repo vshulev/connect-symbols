@@ -7,9 +7,15 @@ export class NavigationStatic extends Directive {
     this.restrict = 'E';
     this.template = `
       <ul class="cs-nav-static">
-        <li><a ui-sref="home">Das Projekt</a></li>
-        <li><a ui-sref="themen">Themen</a></li>
-        <li><a ui-sref="personen">Personen</a></li>
+        <li ui-sref-active="active">
+          <a ui-sref="home">Das Projekt</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="themen">Themen</a>
+        </li>
+        <li ui-sref-active="active">
+          <a ui-sref="personen">Personen</a>
+        </li>
       </ul>
     `;
   }
