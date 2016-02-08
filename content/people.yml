@@ -16,10 +16,20 @@
   topics:
     - name: Grenzüberschreitungen/ Interdisziplinarität
       side: left
+- name: Richard van der Laken
+  photo: RichardVanDerLaken
+  description: |
+    Graphic Designer\nCo-Founder of designpolitie.nl\n
+    Initiator & Creative Director of whatdesigncando.com
+  interview: richard-van-der-laken
+  topics:
+    - name: Das ist ein Designer
+      side: right
 - name: Ulysses Voelker
   photo: UlyssesVoelker
   description: |
-  	Professor für Typografie und Editorial Design an der Hochschule Mainz\n 		Wissenschaftlicher Leiter des Instituts Designlabor Gutenberg\n
+    Professor für Typografie und Editorial Design an der Hochschule Mainz\n
+    Wissenschaftlicher Leiter des Instituts Designlabor Gutenberg\n
     Diplom Grafik Designer
   interview: ulysses-voelker
   topics:
@@ -28,23 +38,9 @@
 - name: Lena Panzlau
   photo: LenaPanzlau
   description: |
-  	Diplom Designerin\n
+    Diplom Designerin\n
     Lehrtätigkeit an der Weißensee Kunsthochschule Berlin\n
     panzlau-prugger.de
-  interview: lena-panzlau
-  topics:
-    - name: Das ist ein Designer
-      side: left
-- name: Richard van der Laken
-  photo: RichardVanDerLaken
-  description: |
-  	Graphic Designer\n
-    Co-Founder of designpolitie.nl\n
-    Initiator & Creative Director of whatdesigncando.com
-  interview: richard-van-der-laken
-  topics:
-    - name: Das ist ein Designer
-      side: right
 - name: Andrean Nechev
   photo: AndreanNechev
   description: |
