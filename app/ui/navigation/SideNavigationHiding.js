@@ -29,12 +29,12 @@ export class SideNavigationHiding extends SideNavigation {
     this._unbindAll();
     this.arrow.hide();
     this.sidenav.bind('mouseleave', () => this._hide());
-    this.move(this.sidenav, { left: '1rem' }, 100);
+    this.move(this.sidenav, { left: '1rem' }, 500);
   }
 
   _hide() {
     this._unbindAll();
-    this.move(this.sidenav, { left: '-100rem' }).then(() => {
+    this.move(this.sidenav, { left: '-50rem' }).then(() => {
       this.arrow.show();
       this.arrow.bind('mouseover', () => this._show());
     });

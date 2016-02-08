@@ -11,6 +11,11 @@ angular.module('connect-symbols.routes', [])
       template: '<home></home>',
     })
 
+    .state('projekt', {
+      url: '/projekt',
+      template: '<projekt></projekt>',
+    })
+
     .state('themen', {
       url: '/themen',
       template: '<themen></themen>',

@@ -8,7 +8,7 @@ export class LogoStatic extends Directive {
     this.replace = true;
     this.template = `
       <div class="text-center">
-        <div class="cs-logo-static"></div>
+        <div ui-sref="home" class="cs-logo-static"></div>
       </div>
     `;
   }

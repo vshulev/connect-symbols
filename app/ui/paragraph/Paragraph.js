@@ -17,6 +17,6 @@ export class Paragraph extends Directive {
   }
 
   link(scope, elem, attr) {
-    this.move(elem, { top: '42rem' });
+    this.move(elem, { top: '39rem' });
   }
 }

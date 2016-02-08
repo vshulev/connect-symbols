@@ -25,6 +25,7 @@ angular.module('connect-symbols', [
   require('./data'),
   require('./home'),
   require('./personen'),
+  require('./projekt'),
   require('./routes'),
   require('./themen'),
   require('./ui'),

@@ -13,6 +13,7 @@ $link-hover-decoration: none;
 @import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .cs-logo {
+  cursor: pointer;
   width: 15rem;
   height: 20rem;
   position: absolute;
@@ -38,6 +39,11 @@ $link-hover-decoration: none;
   position: absolute;
   top: 100rem;
   list-style-type: none;
+
+  li.active {
+    border: 6px solid transparent;
+    border-image: url("/images/border.png") 20 round;
+  }
 }
 
 .cs-nav-static {
@@ -47,7 +53,7 @@ $link-hover-decoration: none;
 
 .cs-nav-side {
   position: absolute;
-  top: 18rem;
+  top: 23rem;
   list-style-type: none;
   color: $alternate-color;
 
@@ -73,7 +79,7 @@ $link-hover-decoration: none;
   width: 5rem;
   height: 10rem;
   position: absolute;
-  top: 18rem;
+  top: 23rem;
   display: none;
   background-image: url("/images/arrow.png");
   background-size: 5rem;
@@ -105,6 +111,7 @@ $link-hover-decoration: none;
   h2 {
     font-size: $font-size-base;
     color: $alternate-color;
+    margin-top: 0px;
   }
 }
 
@@ -123,6 +130,9 @@ $link-hover-decoration: none;
 
 .home-text {
   color: $alternate-color;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .thema-person-card {
