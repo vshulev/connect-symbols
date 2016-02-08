@@ -19,12 +19,29 @@ export class Person {
   }
 
   getByTopic(topic) {
-    let people = _.filter(this._people, { topic: topic });
+    let people = _.filter(this._people, (person) => {
+      return _.filter(person.topics, { name: topic }).length > 0;
+    });
 
     // make sure the two sides alternate
-    let leftSide = _.filter(people, { side: 'left' });
-    let rightSide = _.filter(people, { side: 'right' });
+    let leftSide = this._getLeft(people, topic);
+    let rightSide = this._getRight(people, topic);
     return this._merge(leftSide, rightSide);
+  }
+
+  _getLeft(people, topic) {
+    return this._getSide(people, topic, 'left');
+  }
+
+  _getRight(people, topic) {
+    return this._getSide(people, topic, 'right');
+  }
+
+  _getSide(people, topic, side) {
+    return _.filter(people, (person) => {
+      let s = _.filter(person.topics, { name: topic })[0].side;
+      return s === side;
+    });
   }
 
   _merge(a, b) {

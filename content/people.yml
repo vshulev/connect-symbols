@@ -5,34 +5,37 @@
     Sofia, Bulgarien\n
     Absolvent der FH Düsseldorf
   interview: andrean-nechev
-  side: right
-  topic: The designer as an initiator
-  category: Wandel & Zukunft des Designberufs
+  topics:
+    - name: The designer as an initiator
+      side: right
 - name: Ida Storm Jansen
   photo: IdaStormJansen
   description: |
     Unternehmensberaterin\n
     stormjansen.com
   interview: ida-storm-jansen
-  side: left
-  topic: Grenzüberschreitungen/ Interdisziplinarität
-  category: Was ist ein Designer?
+  topics:
+    - name: Grenzüberschreitungen/ Interdisziplinarität
+      side: left
 - name: Joachim Kobuss
   photo: JoachimKobuss
   description: |
     Autor, Coach, Dozent, Partner für Entwicklungsprozesse im Designbereich\n
     designersbusiness.de
   interview: joachim-kobuss
-  side: left
-  topic: Bilden Hochschulen für die Gegenwart oder für die Zukunft aus?
+  topics:
+    - name: Bilden Hochschulen für die Gegenwart oder für die Zukunft aus?
+      side: left
   category: Was ist ein Designer?
 - name: Ulysses Voelker
   photo: UlyssesVoelker
   description: |
-  	Professor für Typografie und Editorial Design an der Hochschule Mainz\n 		Wissenschaftlicher Leiter des Instituts Designlabor Gutenberg\n
+    Professor für Typografie und Editorial Design an der Hochschule Mainz\n
+    Wissenschaftlicher Leiter des Instituts Designlabor Gutenberg\n
     Diplom Grafik Designer
   interview: ulysses-voelker
-  side: left
-  topic: Das ist ein Designer
-  topic: Die Basis für Design
-  category: Was ist ein Designer?
+  topics:
+    - name: Das ist ein Designer
+      side: left
+    - name: Die Basis für Design
+      side: left
