@@ -16,6 +16,12 @@ export class Thema extends Directive {
   link(scope, elem, attr) {
     this.topic = this.$stateParams.id;
     scope.people = this.Person.getByTopic(this.topic);
+    scope.people.forEach((person) => {
+      let topic = _.filter(person.topics, { name: this.topic })[0];
+      person.topic = topic.name;
+      person.side = topic.side;
+    });
+
     scope.selected = {};
     scope.selected.left = this._firstLeft(scope.people);
     scope.selected.right = this._firstRight(scope.people);
@@ -28,15 +34,10 @@ export class Thema extends Directive {
   }
 
   _firstLeft(people) {
-    // TODO duplicate code - extract into method
-    return _.filter(people, (person) => {
-      return _.filter(person.topics, { name: this.topic })[0].side === 'left';
-    })[0];
+    return _.filter(people, { side: 'left' })[0];
   }
 
   _firstRight(people) {
-    return _.filter(people, (person) => {
-      return _.filter(person.topics, { name: this.topic })[0].side === 'right';
-    })[0];
+    return _.filter(people, { side: 'right' })[0];
   }
 }
