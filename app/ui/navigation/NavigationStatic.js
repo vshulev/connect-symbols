@@ -8,7 +8,7 @@ export class NavigationStatic extends Directive {
     this.template = `
       <ul class="cs-nav-static">
         <li ui-sref-active="active">
-          <a ui-sref="home">Das Projekt</a>
+          <a ui-sref="projekt">Das Projekt</a>
         </li>
         <li ui-sref-active="active">
           <a ui-sref="themen">Themen</a>
