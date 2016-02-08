@@ -1,7 +1,7 @@
 <cs-container>
-  <div class="col-sm-offset-2 col-sm-2">
+  <div class="col-sm-offset-2 col-sm-2 scroll">
     <dynamic-separator></dynamic-separator>
-    <paragraph-top>
+    <paragraph-top class="scroll">
       <div
         ng-repeat="person in people"
         ng-click="select(person)"
@@ -25,7 +25,7 @@
     <logo-static></logo-static>
   </div>
 
-  <div class="col-sm-2">
+  <div class="col-sm-2 scroll">
     <dynamic-separator></dynamic-separator>
     <paragraph-top class="scroll">
       <div ng-bind-html="selected.person.interview"></div>
