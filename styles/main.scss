@@ -69,11 +69,15 @@ $link-hover-decoration: none;
   top: 100rem;
 }
 
-.cs-nav-side-hover-area {
+.cs-nav-show-arrow {
+  width: 5rem;
+  height: 10rem;
   position: absolute;
-  left: 0rem;
-  top: 0rem;
-  width: 25%;
+  top: 18rem;
+  display: none;
+  background-image: url("/images/arrow.png");
+  background-size: 5rem;
+  background-repeat: no-repeat;
 }
 
 .cs-separator {
@@ -95,13 +99,44 @@ $link-hover-decoration: none;
 .cs-paragraph {
   position: relative;
   top: 100rem;
-  padding-bottom: 5rem;
+  padding-left: 6px;
+  padding-right: 6px;
 }
+
+
+.cs-paragraph.scroll {
+  overflow: hidden;
+}
+
+/*
+.cs-paragraph.scroll:hover {
+  overflow-y: scroll;
+  position: absolute;
+}
+*/
 
 .home-text {
   color: $alternate-color;
 }
 
+.thema-person-card {
+  cursor: pointer;
+  color: $alternate-color;
+  margin-bottom: 2rem;
+}
+
+.thema-person-card.active {
+  color: $text-color;
+}
+
+.thema-person-card:hover {
+  color: $brand-info;
+}
+
 .thema-person-card-right {
   @extend .text-right;
+}
+
+.thema-person-name {
+  text-transform: uppercase;
 }
