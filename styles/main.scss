@@ -13,6 +13,7 @@ $link-hover-decoration: none;
 @import 'bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .cs-logo {
+  cursor: pointer;
   width: 15rem;
   height: 20rem;
   position: absolute;
@@ -52,7 +53,7 @@ $link-hover-decoration: none;
 
 .cs-nav-side {
   position: absolute;
-  top: 18rem;
+  top: 23rem;
   list-style-type: none;
   color: $alternate-color;
 
@@ -78,7 +79,7 @@ $link-hover-decoration: none;
   width: 5rem;
   height: 10rem;
   position: absolute;
-  top: 18rem;
+  top: 23rem;
   display: none;
   background-image: url("/images/arrow.png");
   background-size: 5rem;

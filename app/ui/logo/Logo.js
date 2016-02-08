@@ -8,7 +8,7 @@ export class Logo extends Directive {
     this.replace = true;
     this.template = `
       <div class="text-center">
-        <div move-up top="5rem" class="cs-logo"></div>
+        <div ui-sref="home" move-up top="5rem" class="cs-logo"></div>
       </div>
     `;
   }

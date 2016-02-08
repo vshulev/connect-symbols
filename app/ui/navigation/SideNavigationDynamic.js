@@ -10,6 +10,6 @@ export class SideNavigationDynamic extends SideNavigation {
 
   link(scope, elem, attr) {
     super.link(scope, elem, attr);
-    this.move(elem, { top: '18rem' });
+    this.move(elem, { top: '23rem' });
   }
 }
