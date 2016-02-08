@@ -10,7 +10,7 @@ export class ParagraphTop extends Paragraph {
 
   link(scope, elem, attr) {
     this.move(elem, { top: '22rem' }).then(() => {
-      $(elem).height($(window).height() - $(elem).offset().top - 100);
+      $(elem).height($(window).height() - $(elem).offset().top - 60);
     });
   }
 }

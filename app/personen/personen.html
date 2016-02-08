@@ -2,9 +2,13 @@
   <div class="col-sm-offset-2 col-sm-2">
     <dynamic-separator></dynamic-separator>
     <paragraph-top>
-      <div ng-repeat="person in people" ng-click="select(person)">
-        <p>{{ person.name }}</p>
-        <p ng-bind-html="person.description"></p>
+      <div
+        ng-repeat="person in people"
+        ng-click="select(person)"
+        class="thema-person-card"
+        ng-class="{ active: selected.person === person }">
+        <span class="thema-person-name">{{ person.name }}</span>
+        <div ng-bind-html="person.description"></div>
       </div>
     </paragraph-top>
   </div>
@@ -23,7 +27,7 @@
 
   <div class="col-sm-2">
     <dynamic-separator></dynamic-separator>
-    <paragraph-top>
+    <paragraph-top class="scroll">
       <div ng-bind-html="selected.person.interview"></div>
     </paragraph-top>
     <static-navigation></static-navigation>

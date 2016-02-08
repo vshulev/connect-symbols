@@ -99,6 +99,8 @@ $link-hover-decoration: none;
 .cs-paragraph {
   position: relative;
   top: 100rem;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 
@@ -119,6 +121,7 @@ $link-hover-decoration: none;
 .thema-person-card {
   cursor: pointer;
   color: $alternate-color;
+  margin-bottom: 2rem;
 }
 
 .thema-person-card.active {
