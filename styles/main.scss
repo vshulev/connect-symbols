@@ -69,11 +69,15 @@ $link-hover-decoration: none;
   top: 100rem;
 }
 
-.cs-nav-side-hover-area {
+.cs-nav-show-arrow {
+  width: 5rem;
+  height: 10rem;
   position: absolute;
-  left: 0rem;
-  top: 0rem;
-  width: 25%;
+  top: 18rem;
+  display: none;
+  background-image: url("/images/arrow.png");
+  background-size: 5rem;
+  background-repeat: no-repeat;
 }
 
 .cs-separator {

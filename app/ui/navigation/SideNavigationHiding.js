@@ -7,29 +7,41 @@ export class SideNavigationHiding extends SideNavigation {
   constructor(MoveService, Category) {
     super(Category);
     this.move = MoveService.move;
-    this.template =
-      '<div class="cs-nav-side-hover-area">' +
-      this.template +
-      '</div>';
+    this.template = `
+      <div>
+        ${ this.template }
+        <div class="cs-nav-show-arrow"></div>
+      </div>
+    `;
+
+    this.isShowing = true;
   }
 
   link(scope, elem, attr) {
     super.link(scope, elem, attr);
 
-    $(elem).height($(window).height());
-
-    this.sidenav = elem.children();
+    this.sidenav = $(elem).children('.cs-nav-side');
+    this.arrow = $(elem).children('.cs-nav-show-arrow');
     this._hide();
-
-    elem.on('mouseover', () => this._show());
-    elem.on('mouseleave', () => this._hide());
   }
 
   _show() {
+    this._unbindAll();
+    this.arrow.hide();
+    this.sidenav.bind('mouseleave', () => this._hide());
     this.move(this.sidenav, { left: '1rem' }, 100);
   }
 
   _hide() {
-    this.move(this.sidenav, { left: '-100rem' });
+    this._unbindAll();
+    this.move(this.sidenav, { left: '-100rem' }).then(() => {
+      this.arrow.show();
+      this.arrow.bind('mouseover', () => this._show());
+    });
+  }
+
+  _unbindAll() {
+    this.sidenav.unbind();
+    this.arrow.unbind();
   }
 }
