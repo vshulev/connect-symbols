@@ -34,7 +34,7 @@ export class SideNavigationHiding extends SideNavigation {
 
   _hide() {
     this._unbindAll();
-    this.move(this.sidenav, { left: '-50rem' }).then(() => {
+    this.move(this.sidenav, { left: '-100rem' }).then(() => {
       this.arrow.show();
       this.arrow.bind('mouseover', () => this._show());
     });

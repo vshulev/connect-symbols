@@ -57,6 +57,10 @@ $link-hover-decoration: none;
   list-style-type: none;
   color: $alternate-color;
 
+  li:hover .cs-nav-side-inner {
+    display: block;
+  }
+
   a {
     color: $alternate-color;
   }
@@ -68,6 +72,16 @@ $link-hover-decoration: none;
   h4 {
     margin-top: 0px;
   }
+}
+
+.cs-nav-side-inner {
+  margin-bottom: 10px;
+  list-style-type: none;
+  display: none;
+}
+
+.cs-nav-side-inner.active {
+  display: block;
 }
 
 .cs-nav-side-dynamic {

@@ -10,8 +10,8 @@ export class SideNavigation extends Directive {
     this.template = `
       <ul class="cs-nav-side">
         <li ng-repeat="category in categories">
-          <h4>{{ category.category }}</h4>
-          <ul style="margin-bottom: 10px; list-style-type: none">
+          <h4><a href="">{{ category.category }}</a></h4>
+          <ul class="cs-nav-side-inner" ui-sref-active="active">
             <li ng-repeat="topic in category.topics">
               <a ui-sref="thema({ id: topic })">{{ topic }}</a>
             </li>
