@@ -105,14 +105,15 @@ $link-hover-decoration: none;
 
 
 .cs-paragraph.scroll {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
+/*
 .cs-paragraph.scroll:hover {
   overflow-y: scroll;
   position: absolute;
 }
+*/
 
 .home-text {
   color: $alternate-color;
