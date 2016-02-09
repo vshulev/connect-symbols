@@ -4,7 +4,7 @@ It’s a big question. I can give many answers to it but I will try to give you 
 
 ## So what is the direction that designers should go? Do they have to become entrepreneurs?
 
-I think that the designer as an initiator – it’s already happening and it will be more important in the near future. For example this guy, who did FAIRPHONE www.fairphone.com. He is a Dutch designer, Bas van Abel is his name. He developed this FAIRPHONE idea, which is very innovative. It is environmentally and socially responsible, it’s a cool telephone, it has all these different aspects in it. And he developed it himself. There was no client. He said, I’m going to do this, I’m going to find the money, I’m going to find the people I want to work with, I’m going to find the companies. He was working together with the telephone provider KPN. It’s a big telephone provider like T-mobile. So he is not pushing them away – he is embracing them.  And maybe that’s one of the big differences to some years ago. If you can’t beat them – join them, but in a responsible way. You can also do it together. It sounds a little bit soft, but it’s also a difference from how our last generation did it. 
+I think that the designer as an initiator – it’s already happening and it will be more important in the near future. For example this guy, who did FAIRPHONE www.fairphone.com. He is a Dutch designer, Bas van Abel is his name. He developed this FAIRPHONE idea, which is very innovative. It is environmentally and socially responsible, it’s a cool telephone, it has all these different aspects in it. And he developed it himself. There was no client. He said, I’m going to do this, I’m going to find the money, I’m going to find the people I want to work with, I’m going to find the companies. He was working together with the telephone provider KPN. It’s a big telephone provider like T-mobile. So he is not pushing them away – he is embracing them.  And maybe that’s one of the big differences to some years ago. If you can’t beat them – join them, but in a responsible way. You can also do it together. It sounds a little bit soft, but it’s also a difference from how our last generation did it.
 
 ## And how could designers protect their professional work? Should there be any barriers for entering the design market?
 
@@ -32,7 +32,7 @@ You could argue if being a designer or a creative, you can also be a good entrep
 
 ## Yes, I think this is the same with social entrepreneurship.
 
-Yes. So, there’s a difficult balance. And I also always bump into that, I am a very bad entrepreneur. So, that would be great if there, maybe already in art school, would be more focus on that. Or, that designers could organize that a little bit better. 
+So, there’s a difficult balance. And I also always bump into that, I am a very bad entrepreneur. So, that would be great if there, maybe already in art school, would be more focus on that. Or, that designers could organize that a little bit better. 
 
 ## So you think that there should be a focus on entrepreneurship in the education of designers, when you think about what’s happening with the profession right now?
 

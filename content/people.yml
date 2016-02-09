@@ -7,6 +7,13 @@
   topics:
     - name: Bilden Hochschulen für die Gegenwart oder für die Zukunft aus?
       side: left
+      anchor: Die Hochschulen bilden
+    - name: Lobby der Designwirtschaft
+      side: left
+      anchor: Was ist Ihrer Meinung
+    - name: Preispolitik
+      side: right
+      anchor: Durch zwei Wege
 - name: Ida Storm Jansen
   photo: IdaStormJansen
   description: |
@@ -15,7 +22,11 @@
   interview: ida-storm-jansen
   topics:
     - name: Grenzüberschreitungen/ Interdisziplinarität
+      side: right
+      anchor: Dann mache ich es ein bisschen provokant
+    - name: Preispolitik
       side: left
+      anchor: Aus unternehmensberaterischer Sicht
 - name: Richard van der Laken
   photo: RichardVanDerLaken
   description: |
@@ -25,6 +36,9 @@
   topics:
     - name: Das ist ein Designer
       side: right
+    - name: Designer and entrepreneur?
+      side: left
+      anchor: So, there’s a difficult balance
 - name: Ulysses Voelker
   photo: UlyssesVoelker
   description: |
@@ -37,10 +51,15 @@
       side: left
 - name: Lena Panzlau
   photo: LenaPanzlau
+  interview: lena-panzlau
   description: |
     Diplom Designerin\n
     Lehrtätigkeit an der Weißensee Kunsthochschule Berlin\n
     panzlau-prugger.de
+  topics:
+    - name: Preispolitik
+      side: left
+      anchor: Ich persönlich habe
 - name: Andrean Nechev
   photo: AndreanNechev
   description: |
@@ -52,3 +71,13 @@
     - name: Designer and entrepreneur?
       side: right
       anchor: Können Designer Unternehmer sein?
+- name: Steffen Schuhmann
+  photo: SteffenSchuhmann
+  description: |
+    Professor für Gestaltung und Gesellschaft an der Weißensee Kunsthochschule Berlin\n
+    Partner at anschläge.de
+  interview: steffen-schuhmann
+  topics:
+    - name: Grenzüberschreitungen/ Interdisziplinarität
+      side: left
+      anchor: Das andere, was es gibt
