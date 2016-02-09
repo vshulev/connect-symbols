@@ -20,6 +20,7 @@ export class Thema extends Directive {
       let topic = _.filter(person.topics, { name: this.topic })[0];
       person.topic = topic.name;
       person.side = topic.side;
+      person.anchor = topic.anchor;
     });
 
     scope.selected = {};
