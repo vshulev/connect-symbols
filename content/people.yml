@@ -34,8 +34,6 @@
     Initiator & Creative Director of whatdesigncando.com
   interview: richard-van-der-laken
   topics:
-    - name: Das ist ein Designer
-      side: right
     - name: Designer and entrepreneur?
       side: left
       anchor: So, there’s a difficult balance
@@ -49,6 +47,7 @@
   topics:
     - name: Das ist ein Designer
       side: left
+      anchor: Ich habe hier gerade ein Papier vorliegen
 - name: Lena Panzlau
   photo: LenaPanzlau
   interview: lena-panzlau

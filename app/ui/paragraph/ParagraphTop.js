@@ -27,6 +27,8 @@ export class ParagraphTop extends Paragraph {
         html = `${preScroll}<span id="${id}">${scope.scrollTo}</span>${postScroll}`;
         $(elem).html(html);
         $(elem).scrollTop($(`#${id}`).position().top);
+
+        scope.$apply();
       }
     });
   }
