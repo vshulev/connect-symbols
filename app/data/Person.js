@@ -26,7 +26,8 @@ export class Person {
     // make sure the two sides alternate
     let leftSide = this._getLeft(people, topic);
     let rightSide = this._getRight(people, topic);
-    return this._merge(leftSide, rightSide);
+    let result = this._merge(leftSide, rightSide);
+    return result;
   }
 
   _getLeft(people, topic) {
@@ -46,13 +47,18 @@ export class Person {
 
   _merge(a, b) {
     let result = [];
-    for (let i = 0; i < a.length; i++) {
+    let i;
+    for (i = 0; i < a.length; i++) {
       result.push(a[i]);
 
       if (i < b.length) {
         result.push(b[i]);
       }
     };
+
+    for (let j = i; j < b.length; j++) {
+      result.push(b[j]); // haha, BJ
+    }
 
     return result;
   }
