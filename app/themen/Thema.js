@@ -14,7 +14,7 @@ export class Thema extends Directive {
   }
 
   link(scope, elem, attr) {
-    this.topic = this.$stateParams.id;
+    this.topic = decodeURIComponent(this.$stateParams.id);
     scope.people = this.Person.getByTopic(this.topic);
     scope.people.forEach((person) => {
       let topic = _.filter(person.topics, { name: this.topic })[0];
